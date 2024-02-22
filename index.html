@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>color</title>
+  </head>
+  <body>
+    <form class="form">
+      <div id="bg-color" class="bg-color">
+        <p class="color-text" id="color-text"></p>
+      </div>
+      <div class="range">
+        <div class="red-color-item">
+          <label for="red">RED</label>
+          <input
+            name="red"
+            value="0"
+            type="range"
+            min="0"
+            max="255"
+            id="red"
+            oninput="redColor()"
+          />
+          <label id="red-label" for="red"></label>
+        </div>
+        <div class="green-color-item">
+          <label for="green">GREEN</label>
+          <input
+            name="green"
+            value="0"
+            type="range"
+            min="0"
+            max="255"
+            id="green"
+            oninput="greenColor()"
+          />
+          <label id="green-label" for="green"></label>
+        </div>
+        <div class="blue-color-item">
+          <label for="blue">BLUE</label>
+          <input
+            name="blue"
+            value="0"
+            type="range"
+            min="0"
+            max="255"
+            id="blue"
+            oninput="blueColor()"
+          />
+          <label id="blue-label" for="blue"></label>
+        </div>
+      </div>
+    </form>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
